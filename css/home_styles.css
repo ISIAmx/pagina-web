@@ -14,7 +14,7 @@
     --banner-estado5: calc(0vw - 4 * var(--banner-width));
 
 }
-/* Rediseño de Pagina */
+/* barra de navegación */
 .header__items{
     margin-top: 10px;
     display: flex;
