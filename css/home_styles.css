@@ -434,3 +434,19 @@ div.Barra ul {
     border-radius: 200px;
     transform: scaleX(0.2) scaleY(0.2);
   }
+
+/*Facebook*/
+  #Facebook{
+      color: var(--font-color);
+      text-align: center;
+      width: 100%;
+      margin-bottom: 12px;
+      margin-top: 12px;
+  }
+  
+  .fb-post{
+      text-align: center;
+      width: 80%;
+      margin-bottom: 12px;
+      margin-top: 12px;
+  }
