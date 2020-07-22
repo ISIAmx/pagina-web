@@ -24,6 +24,7 @@
 }
 .header__logo img{
     height: 10vh;
+    padding-left: 2vw;
 }
 .header__items ul{
     list-style: none;
@@ -70,7 +71,6 @@
     -ms-transition: 0.75s;
     -o-transition: 0.75s;
     transition: transform 0.75s;
-    transform: translate(var(--banner-estado1), 0);
 }
 .banner__images.mov1{
   transform: translate(var(--banner-estado1), 0);
