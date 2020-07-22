@@ -3,6 +3,7 @@
 <head>
   <title>ISIA</title>
   <link rel="stylesheet" href="css/home_styles.css">
+  
 </head>
 <script src="https://kit.fontawesome.com/6e16c16f00.js" crossorigin="anonymous"></script>
 <body>
@@ -21,16 +22,17 @@
     </ul>
   </nav>
 </header>
-<section class="banner__container">
-  <div class="banner__leftControl">
-    <a href=""><i class="fas fa-chevron-left side"></i></a>
-  </div>
-  <div class="banner__images">
 
+<section class="banner__container">
+  <div class="banner__images">
+    <a href=""><img src="img/img1.jpg" class="banner_item"></a>
+    <a href=""><img src="img/img2.jpg" class="banner_item"></a>
+    <a href=""><img src="img/img3.jpg" class="banner_item"></a>
+    <a href=""><img src="img/img4.jpg" class="banner_item"></a>
+    <a href=""><img src="img/img5.jpg" class="banner_item"></a>
   </div>
-  <div class="banner__rightControl">
-    <a href=""><i class="fas fa-chevron-right side"></i></a>
-  </div>
+  <a onclick="bannerMov(-1)" class="sidel"><i class="fas fa-chevron-left side"></i></a>
+  <a onclick="bannerMov(1)" class="sider"><i class="fas fa-chevron-right side"></i></a>
 </section>
 
 <div class="Barra">
@@ -47,6 +49,7 @@
   </ul>
 </div>
 
+<script type="text/javascript" src="js/banner.js"></script>
 </body>
 </html>
  
