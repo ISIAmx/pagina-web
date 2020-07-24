@@ -1,71 +1,109 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>ISIA</title>
-  <link rel="stylesheet" href="css/home_styles.css">
-  
+    <title>ISIA</title>
+    <link rel="stylesheet" href="css/home_desktop_styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/home_mobile_styles.css">
+    <script src="https://kit.fontawesome.com/6e16c16f00.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<script src="https://kit.fontawesome.com/6e16c16f00.js" crossorigin="anonymous"></script>
+
 <body>
+    <!--Implementación de Facebook SDK -->
+    <div id="fb-root"></div>
+    <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+    <!-- Header -->
+    <header class="header__items">
+        <div class="header__logo">
+            <img src="img/logoISIA.png" alt="">
+        </div>
+        <nav class="header__nav">
+            <ul>
+                <li><a href="/" class="header__link">Inicio</a></li>
+                <li><a href="/" class="header__link">Galeria</a></li>
+                <li><a href="/" class="header__link">Nuestras Sucursales</a></li>
+                <li><a href="/" class="header__link">Productos</a></li>
+                <li><a href="/" class="header__link mobile_contact_border">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!--Implementación de Facebook SDK -->
-  <div id="fb-root"></div>
-  <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-  
-<header class="header__items">
-  <div class="header__logo">
-    <img src="img/logoISIA.png" alt="">
-  </div>
-  <nav>
-    <ul>
-      <li><a href="/" class="header__link">Inicio</a></li>
-      <li><a href="/" class="header__link">Galeria</a></li>
-      <li><a href="/" class="header__link">Nuestras Sucursales</a></li>
-      <li><a href="/" class="header__link">Productos</a></li>
-      <li><a href="/" class="header__link">Contacto</a></li>
-    </ul>
-  </nav>
-</header>
+    <section class="banner__container">
+        <div class="banner__images">
+            <a href=""><img src="img/img1.jpg" class="banner_item"></a>
+            <a href=""><img src="img/img2.jpg" class="banner_item"></a>
+            <a href=""><img src="img/img3.jpg" class="banner_item"></a>
+            <a href=""><img src="img/img4.jpg" class="banner_item"></a>
+            <a href=""><img src="img/img5.jpg" class="banner_item"></a>
+        </div>
+        <a onclick="bannerMov(-1)" class="sidel"><i class="fas fa-chevron-left side"></i></a>
+        <a onclick="bannerMov(1)" class="sider"><i class="fas fa-chevron-right side"></i></a>
+    </section>
 
-<section class="banner__container">
-  <div class="banner__images">
-    <a href=""><img src="img/img1.jpg" class="banner_item"></a>
-    <a href=""><img src="img/img2.jpg" class="banner_item"></a>
-    <a href=""><img src="img/img3.jpg" class="banner_item"></a>
-    <a href=""><img src="img/img4.jpg" class="banner_item"></a>
-    <a href=""><img src="img/img5.jpg" class="banner_item"></a>
-  </div>
-  <a onclick="bannerMov(-1)" class="sidel"><i class="fas fa-chevron-left side"></i></a>
-  <a onclick="bannerMov(1)" class="sider"><i class="fas fa-chevron-right side"></i></a>
-</section>
+    <div class="Barra">
+        <ul>
+            <li class="animCont"><a class="item" href="#contact">Batientes<p class="puertaCont"><span class="pbizq"></span><span class="pbder"></span></p></a></li>
+            <li class="animCont"><a class="item" href="#about">Corredizas<p class="puertaCont"><span class="pcorr"></span></p></a></li>
+            <li class="animCont"><a class="item" href="#news">Seccionales<p class="puertaCont"><span class="psecc"><span class="ppanel"></span><span class="ppanel"></span><span class="ppanel"></span><span class="ppanel"></span></span></p></a></li>
+            <li class="animCont"><a class="item" href="#home">Enrolables<p class="puertaCont"><span class="prmov"><span class="ppanel"></span><span class="ppanel"></span><span class="ppanel"></span><span class="ppanel"></span></span><span class="prfij"></span></p></a></li>
+            <li class="animCont"><a class="item" href="#home">Barreras<p class="puertaCont"><span class="pbhor"></span><span class="pbver"></span></p></a></li>
+            <li class="animCont"><a class="item" href="#home">Peatonales<p class="puertaCont"><span class="ppmov"></span><span class="ppfij"></span></p></a></li>
+            <li class="animCont"><a class="item" href="#home">Radio<p class="puertaCont"><span class="control"></span><span class="led"></span><span class="onda"></span></p></a></li>
+            <li class="animCont"><a class="item" href="#home">Tarjetas<p class="puertaCont"><span class="tarjeta"></span><span class="rect1"></span><span class="rect2"></span><span class="rect3"></span><span class="rect4"></span></p></a></li>
+            <li class="animCont"><a class="item" href="#home">Accesorios</a></li>
+        </ul>
+    </div>
 
-<div class="Barra">
-  <ul>
-    <li class="animCont"><a class="item" href="#contact">Batientes<p class="puertaCont"><span class="pbizq"></span><span class="pbder"></span></p></a></li>
-    <li class="animCont"><a class="item" href="#about">Corredizas<p class="puertaCont"><span class="pcorr"></span></p></a></li>
-    <li class="animCont"><a class="item" href="#news">Seccionales<p class="puertaCont"><span class="psecc"><span class="ppanel"></span><span class="ppanel"></span><span class="ppanel"></span><span class="ppanel"></span></span></p></a></li>
-    <li class="animCont"><a class="item" href="#home">Enrolables<p class="puertaCont"><span class="prmov"><span class="ppanel"></span><span class="ppanel"></span><span class="ppanel"></span><span class="ppanel"></span></span><span class="prfij"></span></p></a></li>
-    <li class="animCont"><a class="item" href="#home">Barreras<p class="puertaCont"><span class="pbhor"></span><span class="pbver"></span></p></a></li>
-    <li class="animCont"><a class="item" href="#home">Peatonales<p class="puertaCont"><span class="ppmov"></span><span class="ppfij"></span></p></a></li>
-    <li class="animCont"><a class="item" href="#home">Radio<p class="puertaCont"><span class="control"></span><span class="led"></span><span class="onda"></span></p></a></li>
-    <li class="animCont"><a class="item" href="#home">Tarjetas<p class="puertaCont"><span class="tarjeta"></span><span class="rect1"></span><span class="rect2"></span><span class="rect3"></span><span class="rect4"></span></p></a></li>
-    <li class="animCont"><a class="item" href="#home">Accesorios</a></li>
-  </ul>
-</div>
-  
-<!--data-href se actualiza con la URL de la publicación que se desea mostrar-->
-<div id="Facebook">
-    <h1>Visítanos en Facebook</h1>
-    <div class="fb-page" data-href="https://www.facebook.com/isia.automatismos" data-tabs="timeline,messages" data-width="500" data-height="700" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/isia.automatismos" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/isia.automatismos">Ingeniería y Servicios Integrales para Automatización</a></blockquote></div>
-    <div class="fb-post" data-href="https://www.facebook.com/isia.automatismos/posts/842711512782147" data-adapt-container-width="true"></div>
-    <p>Da Me gusta y Comparte nuestra página en Facebook:</p>
-    <p>
-        <fb:like show_faces="yes" href="https://www.facebook.com/isia.automatismos"></fb:like>
-        <fb:share-button href="https://www.facebook.com/isia.automatismos" type="button_count"></fb:share-button>
-    </p>
-</div>
+    <!--data-href se actualiza con la URL de la publicación que se desea mostrar-->
+    <div id="Facebook">
+        <div class="facebook-title">
 
-<script type="text/javascript" src="js/banner.js"></script>
+            <h1> <i class="fab fa-facebook-square"></i> Visítanos en Facebook</h1>
+        </div>
+        <div class="fb-page-container">
+            <div class="fb-page" data-href="https://www.facebook.com/isia.automatismos" data-tabs="timeline,messages" data-width="500" data-height="700" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/isia.automatismos" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/isia.automatismos">Ingeniería y Servicios Integrales para Automatización</a></blockquote>
+            </div>
+        </div>
+        <div class="fb-post-container">
+            <div class="fb-post" data-href="https://www.facebook.com/isia.automatismos/posts/842711512782147" data-adapt-container-width="true"></div>
+        </div>
+        <div class="facebook-likes">
+            <p>
+                <fb:like show_faces="yes" href="https://www.facebook.com/isia.automatismos"></fb:like>
+                <fb:share-button href="https://www.facebook.com/isia.automatismos" type="button_count"></fb:share-button>
+            </p>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer-container">
+        <section class="footer-info">
+            <article class="company-title">
+                <h3>ISIA MÉXICO</h3>
+            </article>
+            <article class="us-title">
+                <h3>Conócenos</h3>
+            </article>
+            <article class="contact-title">
+                <h3>contacto</h3>
+            </article>
+            <article class="company-text">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore fuga quasi tempora culpa asperiores fugit accusamus possimus perspiciatis officia illum quo nisi magni ea odio provident, ab tenetur non accusantium!</p>
+            </article>
+            <article class="us-text">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore fuga quasi tempora culpa asperiores fugit accusamus possimus perspiciatis officia illum quo nisi magni ea odio provident, ab tenetur non accusantium!</p>
+            </article>
+            <article class="contact-text">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore fuga quasi tempora culpa asperiores fugit accusamus possimus perspiciatis officia illum quo nisi magni ea odio provident, ab tenetur non accusantium!</p>
+            </article>
+        </section>
+        <section class="footer-copy">
+            <h3>ISIA © 2020</h3>
+        </section>
+    </footer>
 </body>
+<script type="text/javascript" src="js/banner.js"></script>
+
 </html>
- 
