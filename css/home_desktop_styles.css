@@ -199,6 +199,7 @@ p.puertaCont {
         'page page post post'
         '. likes likes .'
         ;
+    grid-gap: 10vh 0;
 }
 
 .facebook-title {
@@ -206,6 +207,7 @@ p.puertaCont {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 }
 
 .facebook-title h1 {
