@@ -1,58 +1,82 @@
+/* Modifica el tamaño para pantallas con tamaño máximo de 1000px */
+
 @media (max-width: 1000px) {
+    /* Cambia la grilla de la sección de facebook para poner el contenido en una misma fila */
     #Facebook {
         grid-template-columns: 1fr 0;
         grid-template-rows: 20vh 1fr 1fr 12vh;
     }
     .facebook-title {
+        /* Posiciona el div en las lineas del grid especificadas */
         grid-area: 1 / 1 / 2 / 2;
     }
     .fb-page-container {
+        /* Posiciona el div en las lineas del grid especificadas */
         grid-area: 2 / 1 / 3 / 2;
     }
     .fb-post-container {
+        /* Posiciona el div en las lineas del grid especificadas */
         grid-area: 3 / 1 / 4 / 2;
     }
     .fb-post {
         box-shadow: 0px 0px 0px 0px white;
     }
     .facebook-likes {
+        /* Posiciona el div en las lineas del grid especificadas */
         grid-area: 4 / 1 / 5 / 2;
     }
 }
 
+
+/* Modifica el tamaño para pantallas con tamaño máximo de 800px */
+
 @media (max-width: 800px) {
     div.Barra ul {
+        /* Cambia el display de la barra para distribuir el contenido */
         display: grid;
+        /* dividimos el area de la barra en 5 columnas y 2 filas */
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         width: 100%;
     }
 }
 
+
+/* Modifica el tamaño para pantallas con tamaño máximo de 750px */
+
 @media (max-width: 750px) {
     div.Barra ul {
         display: grid;
+        /* dividimos el area de la barra en 3 columnas y 3 filas */
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         width: 100%;
     }
 }
 
+
+/* Modifica el tamaño para pantallas con tamaño máximo de 750px */
+
 @media (max-width: 615px) {
     * {
+        /* Cambiamos la altura del banner */
         --banner-height: 50vh;
     }
     .header__items {
+        /* Cambiamos el display del header */
         display: grid;
+        /* dividimos el area en una columna y dos filas */
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
     .header__logo {
+        /* Centramos el contenido del div vertical y horizontalmente */
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .header__nav {
+        /* Centramos el contenido del div vertical y horizontalmente */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -61,54 +85,69 @@
         border-right: 1px solid var(--font-color);
     }
     .banner_item {
+        /* Posicionando el banner */
         position: relative;
         height: 40vh;
         top: calc(110vh - 2 * var(--banner-height));
     }
     .sider {
+        /* posicionando el control derecho del banner */
         position: relative;
         height: 40vh;
         top: calc(20vh - 2 * var(--banner-height));
     }
     .sidel {
+        /* posicionando el control izquierdo del banner */
         position: relative;
         height: 40vh;
         top: calc(60vh - 2 * var(--banner-height));
     }
 }
 
+
+/* Modifica el tamaño para pantallas con tamaño máximo de 560px */
+
 @media (max-width: 560px) {
     .fb-post-container {
+        /* Ocultamos el post de facebook debido a que sus dimensiones superan los 560px*/
         display: none;
     }
     #Facebook {
+        /* Cambiamos la distribución a 1 columna y 3 filas */
         grid-template-columns: 1fr 0;
         grid-template-rows: 20vh 1fr 12vh;
     }
     .facebook-title {
+        /* Posiciona el div en las lineas del grid especificadas */
         grid-area: 1 / 1 / 2 / 2;
     }
     .fb-page-container {
+        /* Posiciona el div en las lineas del grid especificadas */
         grid-area: 2 / 1 / 3 / 2;
     }
     .facebook-likes {
+        /* Posiciona el div en las lineas del grid especificadas */
         grid-area: 3 / 1 / 4 / 2;
     }
     .facebook-likes p {
+        /* Hcaemos que el parrafo ocupe todo el ancho posible */
         width: 100%;
         margin: 0;
         padding: 0;
     }
     .footer-container {
+        /* Definimos medidas para el footer */
         height: 112vh;
         width: 100%;
     }
     .footer-info {
+        /* Definimos la altura de la seccion infomativa del footer y definimos 6 filas y una columna */
         height: 102vh;
         grid-template-rows: 10vh 24vh 10vh 24vh 10vh 24vh;
         grid-template-columns: 1fr 0 0;
     }
     .company-title {
+        /* Posiciona el div en las lineas del grid especificadas  y centra el contenido*/
         grid-area: 1 / 1 / 2 / 2;
         justify-content: center;
         align-items: center;
@@ -119,6 +158,7 @@
         margin-right: 0;
     }
     .company-text {
+        /* Posiciona el div en las lineas del grid especificadas y centra el contenido */
         grid-area: 2 / 1 / 3 / 2;
         text-align: center;
         margin: 10vw;
@@ -128,9 +168,11 @@
         margin: 1vw;
     }
     .us-title {
+        /* Posiciona el div en las lineas del grid especificadas */
         grid-area: 3 / 1 / 4 / 2;
     }
     .us-text {
+        /* Posiciona el div en las lineas del grid especificadas y centra el contenido*/
         grid-area: 4 / 1 / 5 / 2;
         text-align: center;
         margin: 10vw;
@@ -140,6 +182,7 @@
         margin: 1vw;
     }
     .contact-title {
+        /* Posiciona el div en las lineas del grid especificadas y centra el contenido*/
         grid-area: 5 / 1 / 6 / 2;
         justify-content: center;
         align-items: center;
@@ -150,6 +193,7 @@
         margin-left: 1vw;
     }
     .contact-text {
+        /* Posiciona el div en las lineas del grid especificadas y centra el cotenido*/
         grid-area: 6 / 1 / 7 / 2;
         text-transform: uppercase;
         color: white;
@@ -170,11 +214,13 @@
 
 @media (max-width: 425px) {
     #Facebook {
+        /* Reajusta las medidas de la grilla en 1 columna y 3 filas */
         width: 100%;
         grid-template-columns: 100% 0;
         grid-template-rows: 20vh 1fr 12vh;
     }
     div.Barra ul {
+        /* Posiciona el div en las lineas del grid especificadas y centra el contenido*/
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
