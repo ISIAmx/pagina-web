@@ -207,7 +207,6 @@ p.puertaCont {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
 }
 
 .facebook-title h1 {
@@ -215,6 +214,10 @@ p.puertaCont {
     padding: 2vh 5vw;
     color: white;
     background-color: var(--font-color);
+}
+
+.facebook-title a {
+    text-decoration: none;
 }
 
 .fb-page-container {
@@ -252,6 +255,11 @@ p.puertaCont {
 .footer-container {
     height: 60vh;
     width: 100%;
+}
+
+.footer-container a {
+    text-decoration: none;
+    color: white;
 }
 
 .footer-info {
