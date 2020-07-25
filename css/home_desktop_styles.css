@@ -94,7 +94,7 @@
     z-index: 0;
     background-size: cover;
     background-position: center;
-    transition: 800s;
+    transition: 800ms;
 }
 
 .img1 {
