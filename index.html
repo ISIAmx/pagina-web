@@ -75,10 +75,16 @@
     </div>
     <script>
     if(screen.width <= 500){
-        var page = document.getElementsByClassName("fb-page")[0];
+        var pages = document.getElementsByClassName("fb-page");
+        var posts = document.getElementsByClassName("fb-post");
         var node = document.createAttribute("data-width");
         node.value = screen.width -10;
-        page.setAttributeNode(node);
+        for(let i=0; i<pages.length; i++){
+            pages[i].setAttributeNode(node);
+        }
+        for(let i=0; i<posts.length; i++){
+            posts[i].setAttributeNode(node);
+        }
     }
     </script>
 </body>
