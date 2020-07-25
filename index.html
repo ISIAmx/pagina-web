@@ -72,6 +72,14 @@
     <div class="footer">
         <iframe src="footer.html"></iframe>
     </div>
+    <script>
+    if(screen.width <= 500){
+        var page = document.getElementsByClassName("fb-page")[0];
+        var node = document.createAttribute("data-width");
+        node.value = screen.width -10;
+        page.setAttributeNode(node);
+    }
+    </script>
 </body>
 <script type="text/javascript" src="js/banner.js"></script>
 
