@@ -5,7 +5,7 @@
     #Facebook {
         grid-template-areas: 'title' 'page' 'page' 'post' 'post' 'likes';
     }
-/*    .facebook-title {
+    /*    .facebook-title {
          Posiciona el div en las lineas del grid especificadas 
         grid-area: 1 / 1 / 2 / 2;
     }
@@ -67,7 +67,7 @@
         /* Cambiamos la altura del banner */
         --banner-height: 50vh;
     }
-    .header{
+    .header {
         height: var(--banner-height);
     }
     .header__items {
@@ -116,14 +116,14 @@
 /* Modifica el tamaño para pantallas con tamaño máximo de 560px */
 
 @media (max-width: 560px) {
-/*    .fb-post-container {
+    /*    .fb-post-container {
          Ocultamos el post de facebook debido a que sus dimensiones superan los 560px
         display: none;
     }*/
     #Facebook {
         grid-template-areas: 'title' 'page' 'page' 'post' 'post' 'likes';
     }
-/*    .facebook-title {
+    /*    .facebook-title {
          Posiciona el div en las lineas del grid especificadas 
         grid-area: 1 / 1 / 2 / 2;
     }
@@ -226,8 +226,8 @@
     #Facebook {
         /* Reajusta las medidas de la grilla en 1 columna y 3 filas */
         width: 100%;
-        grid-template-areas: 'title' 'page' 'post' 'likes'
-/*        grid-template-columns: 100% 0;*/
+        grid-template-areas: 'title' 'page' 'post' 'likes';
+        /*        grid-template-columns: 100% 0;*/
         grid-template-rows: 20vh 60vh 60vh 12vh;
     }
     div.Barra ul {
