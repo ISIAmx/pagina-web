@@ -27,18 +27,6 @@
 /* Modifica el tamaño para pantallas con tamaño máximo de 800px */
 
 @media (max-width: 800px) {
-    .header {
-        height: 40vh;
-    }
-    .header__logo img {
-        height: 40vh;
-    }
-    .header__items {
-        height: 50vh;
-    }
-    .header__items li {
-        height: 60vh;
-    }
     div.Barra ul {
         /* Cambia el display de la barra para distribuir el contenido */
         display: grid;
@@ -53,6 +41,18 @@
 /* Modifica el tamaño para pantallas con tamaño máximo de 750px */
 
 @media (max-width: 750px) {
+    .header {
+        height: 40vh;
+    }
+    .header__logo img {
+        height: 40vh;
+    }
+    .header__items {
+        height: 50vh;
+    }
+    .header__items li {
+        height: 60vh;
+    }
     div.Barra ul {
         display: grid;
         /* dividimos el area de la barra en 3 columnas y 3 filas */
@@ -233,8 +233,8 @@
         /* Reajusta las medidas de la grilla en 1 columna y 3 filas */
         width: 100%;
         grid-template-areas: 'title' 'page' 'post' 'likes'
-/*        grid-template-columns: 100% 0;*/
-        grid-template-rows: 20vh 60vh 60vh 12vh;
+/*        grid-template-columns: 100% 0;
+        grid-template-rows: 20vh 60vh 60vh 12vh;*/
     }
     div.Barra ul {
         /* Posiciona el div en las lineas del grid especificadas y centra el contenido*/
