@@ -54,12 +54,8 @@
             </a>
         </div>
         <div class="fb-page-container">
-            <div class="fb-page" data-href="https://www.facebook.com/isia.automatismos" data-tabs="timeline,events" data-width="500" data-height="600" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true">
-                <blockquote cite="https://www.facebook.com/isia.automatismos" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/isia.automatismos">Ingeniería y Servicios Integrales para Automatización</a></blockquote>
-            </div>
         </div>
         <div class="fb-post-container">
-            <div class="fb-post" data-href="https://www.facebook.com/isia.automatismos/posts/842711512782147" data-width="500"></div>
         </div>
         <div class="facebook-likes">
             <p>
@@ -68,22 +64,7 @@
             </p>
         </div>
     </div>
-    <script>
-    window.onresize = function(){
-    if(window.innerWidth <= 500){
-        var pages = document.getElementsByClassName("fb-page");
-        var posts = document.getElementsByClassName("fb-post");
-        var node = document.createAttribute("data-width");
-        node.value = window.innerWidth - 50;
-        for(let i=0; i<pages.length; i++){
-            alert(node.value + ' ' + pages.length);
-            pages.setAttributeNode(node);
-        }
-        for(let i=0; i<posts.length; i++){
-            posts.setAttributeNode(node);
-        
-    }
-    </script>
+    <script src="js/facebook.js"></script>
 
     <!--footer-->
     <div class="footer">
