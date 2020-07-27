@@ -17,9 +17,6 @@
          Posiciona el div en las lineas del grid especificadas 
         grid-area: 3 / 1 / 4 / 2;
     }
-    .fb-post {
-        box-shadow: 0px 0px 0px 0px white;
-    }
     .facebook-likes {
          Posiciona el div en las lineas del grid especificadas 
         grid-area: 4 / 1 / 5 / 2;
@@ -35,6 +32,12 @@
     }
     .header__logo img {
         height: 40vh;
+    }
+    .header__items {
+        height: 50vh;
+    }
+    .header__items li {
+        height: 60vh;
     }
     div.Barra ul {
         /* Cambia el display de la barra para distribuir el contenido */
@@ -120,9 +123,6 @@
          Ocultamos el post de facebook debido a que sus dimensiones superan los 560px
         display: none;
     }*/
-    #Facebook {
-        grid-template-areas: 'title' 'page' 'page' 'post' 'post' 'likes';
-    }
 /*    .facebook-title {
          Posiciona el div en las lineas del grid especificadas 
         grid-area: 1 / 1 / 2 / 2;
@@ -135,6 +135,12 @@
          Posiciona el div en las lineas del grid especificadas 
         grid-area: 3 / 1 / 4 / 2;
     }*/
+    .fb-post {
+        box-shadow: 0px 0px 0px 0px white;
+    }
+    .fb-page {
+        box-shadow: 0px 0px 0px 0px white;
+    }
     .facebook-likes p {
         /* Hcaemos que el parrafo ocupe todo el ancho posible */
         width: 100%;
