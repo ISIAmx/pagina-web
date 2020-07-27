@@ -48,16 +48,21 @@ function adaptar() {
     blockpo.setAttribute("cite", "https://developers.facebook.com/isia.automatismos/posts/842711512782147");
     blockpo.setAttribute("class", "fb-xfbml-parse-ignore");
     var p = document.createElement("p");
+    
     p.appendChild(document.createTextNode("Nueva generación de controles"));
     blockpo.appendChild(p);
+    
     blockpo.appendChild(document.createTextNode("Publicado por "));
     var pag = document.createElement("a");
     pag.setAttribute("href","https://www.facebook.com/isia.automatismos/");
+    
     pag.appendChild(document.createTextNode("Ingeniería y Servicios Integrales para Automatización"));
     blockpo.appendChild(pag);
+    
     blockpo.appendChild(document.createTextNode("en&nbsp;"));
     var pag2 = document.createElement("a");
     pag2.setAttribute("href", "https://developers.facebook.com/isia.automatismos/posts/842711512782147");
+    
     pag2.appendChild(document.createTextNode("Viernes, 14 de junio de 2019"));
     blockpo.appendChild(pag2);
     post.setAttributeNode(hrefc);
