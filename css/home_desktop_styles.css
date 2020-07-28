@@ -210,10 +210,9 @@ p.puertaCont {
 }
 
 .facebook-title h1 {
-    border: 1px solid var(--font-color);
+    border: 2px solid var(--font-color);
     padding: 2vh 5vw;
-    color: white;
-    background-color: var(--font-color);
+    color: var(--font-color);
 }
 
 .facebook-title a {
