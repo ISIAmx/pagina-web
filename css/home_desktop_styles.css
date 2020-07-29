@@ -251,6 +251,11 @@ p.puertaCont {
     align-items: center;
 }
 
+/*Estilos de Sucursales*/
+[class^="sucursal"]{
+    display: none;
+}
+
 
 /* ESTILOS DEL FOOTER */
 
