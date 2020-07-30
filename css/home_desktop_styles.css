@@ -252,10 +252,48 @@ p.puertaCont {
 }
 
 /*Estilos de Sucursales*/
-[class^="sucursal"]{
+[id^="sucursal"]{
     display: none;
 }
 
+.Direcciones {
+    width: 100%;
+    padding-left: 5vh;
+}
+
+.Direcciones [class^=opc]{
+    border: 1px solid #ccc;
+    display: block;
+    float:left;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: white;
+    color: var(--font-color);
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+
+.Direcciones [class^=opc]:hover{
+    background-color: var(--font-color);
+    color: white;
+}
+
+.Direcciones [class^=opc]:active{
+    background-color: gray;
+}
+
+.closebtn {
+    cursor: pointer;
+    text-align: right;
+    width: 80%;
+}
+
+.closebtn:hover {
+    background-color: var(--font-color);
+    color: white;
+}
 
 /* ESTILOS DEL FOOTER */
 
