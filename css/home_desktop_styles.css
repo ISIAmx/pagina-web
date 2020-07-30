@@ -15,8 +15,21 @@
     --banner-estado5: calc(0vw - 4 * var(--banner-width));
 }
 
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
 
 /* barra de navegación */
+
+.button__menu {
+    height: 80vh;
+    width: 100%;
+}
 
 .header {
     height: 10vh;
@@ -32,6 +45,10 @@
 .header__logo img {
     height: 90vh;
     padding-left: 2vw;
+}
+
+.header__button {
+    display: none;
 }
 
 .header__items {
@@ -251,8 +268,10 @@ p.puertaCont {
     align-items: center;
 }
 
+
 /*Estilos de Sucursales*/
-[id^="sucursal"]{
+
+[id^="sucursal"] {
     display: none;
 }
 
@@ -263,7 +282,7 @@ p.puertaCont {
     align-items: center;
 }
 
-.Direcciones [id^=opc]{
+.Direcciones [id^=opc] {
     width: calc(25% - 2px);
     border: 1px solid #ccc;
     display: block;
@@ -276,12 +295,12 @@ p.puertaCont {
     padding-bottom: 5vh;
 }
 
-.Direcciones [id^=opc]:hover{
+.Direcciones [id^=opc]:hover {
     background-color: var(--font-color);
     color: white;
 }
 
-.Direcciones [id^=opc]:active{
+.Direcciones [id^=opc]:active {
     background-color: gray;
 }
 
@@ -295,6 +314,7 @@ p.puertaCont {
     background-color: lightgray;
     color: var(--font-color);
 }
+
 
 /* ESTILOS DEL FOOTER */
 

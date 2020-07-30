@@ -5,7 +5,7 @@
     #Facebook {
         grid-template-areas: 'title' 'page' 'page' 'post' 'post' 'likes';
     }
-/*    .facebook-title {
+    /*    .facebook-title {
          Posiciona el div en las lineas del grid especificadas 
         grid-area: 1 / 1 / 2 / 2;
     }
@@ -39,6 +39,10 @@
     .header__items ul {
         width: 100%;
     }
+    .header__button {
+        width: 100px;
+        height: 100px;
+    }
     div.Barra ul {
         /* Cambia el display de la barra para distribuir el contenido */
         display: grid;
@@ -70,7 +74,7 @@
         /* Cambiamos la altura del banner */
         --banner-height: 50vh;
     }
-    .header{
+    .header {
         height: var(--banner-height);
     }
     .header__items {
@@ -119,11 +123,11 @@
 /* Modifica el tamaño para pantallas con tamaño máximo de 560px */
 
 @media (max-width: 560px) {
-/*    .fb-post-container {
+    /*    .fb-post-container {
          Ocultamos el post de facebook debido a que sus dimensiones superan los 560px
         display: none;
     }*/
-/*    .facebook-title {
+    /*    .facebook-title {
          Posiciona el div en las lineas del grid especificadas 
         grid-area: 1 / 1 / 2 / 2;
     }
@@ -162,7 +166,7 @@
         grid-template-rows: 9vh 21vh 9vh 21vh 9vh 21vh;
         grid-template-columns: 1fr 0 0;
     }
-    .footer-info p{
+    .footer-info p {
         font-size: 2vh;
     }
     .company-title {
@@ -235,7 +239,7 @@
         /* Reajusta las medidas de la grilla en 1 columna y 3 filas */
         width: 100%;
         grid-template-areas: 'title' 'page' 'post' 'likes'
-/*        grid-template-columns: 100% 0;
+        /*        grid-template-columns: 100% 0;
         grid-template-rows: 20vh 60vh 60vh 12vh;*/
     }
     div.Barra ul {
@@ -245,5 +249,83 @@
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         width: 100%;
         justify-items: center;
+    }
+}
+
+@media (max-width: 900px) {
+    .header__nav ul {
+        display: none;
+    }
+    .header__button {
+        display: block;
+        height: 50px;
+        width: 50px;
+        margin: 4vh 2vw 0 0;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        border-radius: 25px;
+    }
+    .header__button i {
+        color: var(--font-color);
+        font-size: 50px;
+    }
+    .header {
+        height: 20vh;
+    }
+    .header__logo img {
+        height: 80vh;
+    }
+    .button__menu ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        height: 80%;
+    }
+    .button__menu li a {
+        color: var(--font-color);
+        text-decoration: none;
+        font-size: 8vw;
+    }
+}
+
+@media(max-width: 800px) {
+    .header__button {
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+    }
+    .header__button i {
+        font-size: 50px;
+    }
+    .header__logo img {
+        height: 80vh;
+    }
+}
+
+@media (max-width: 615px) {
+    .header {
+        height: 20vh;
+    }
+    .header__logo img {
+        width: 70%;
+        height: auto;
+    }
+    .header__items {
+        /* Cambiamos el display del header */
+        display: grid;
+        /* dividimos el area en una columna y dos filas */
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        height: 20vh;
+    }
+    .header__nav {
+        /* Centramos el contenido del div vertical y horizontalmente */
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
     }
 }

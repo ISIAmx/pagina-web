@@ -20,6 +20,15 @@ and open the template in the editor.
     <div class="header">
         <iframe src="header.html"></iframe>
     </div>
+    <div class="button__menu hidden">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="gallery.html">Galeria</a></li>
+            <li><a href="sucursales.html">Nuestras Sucursales</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+        </ul>
+    </div>
     <div class="facebook-title">
         <h1><i class="fas fa-map-signs"></i> Visítanos</h1>
     </div>
@@ -55,12 +64,12 @@ and open the template in the editor.
     </div>
     <script>
         function openTab(tabName) {
-          var i, x;
-          x = document.getElementsByClassName("containerTab");
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-          }
-          document.getElementById(tabName).style.display = "block";
+            var i, x;
+            x = document.getElementsByClassName("containerTab");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "block";
         }
         openTab('sucursal1');
     </script>
