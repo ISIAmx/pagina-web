@@ -24,27 +24,31 @@ and open the template in the editor.
         <h1><i class="fas fa-map-signs"></i> Visítanos</h1>
     </div>
     <div class="Direcciones">
-        <div class="opc1" onclick="openTab('sucursal1')">Sucursal 1</div>
-        <div class="opc2" onclick="openTab('sucursal2')">Sucursal 2</div>
-        <div class="opc3" onclick="openTab('sucursal3')">Sucursal 3</div>
-        <div class="opc4" onclick="openTab('sucursal4')">Sucursal 4</div>
+        <div id="opc1" onclick="openTab('sucursal1')">Sucursal 1</div>
+        <div id="opc2" onclick="openTab('sucursal2')">Sucursal 2</div>
+        <div id="opc3" onclick="openTab('sucursal3')">Sucursal 3</div>
+        <div id="opc4" onclick="openTab('sucursal4')">Sucursal 4</div>
     </div>
     <div class="containerTab" id="sucursal1" align="center">
+        <h1>Sucursal 1</h1><br>
         <div onclick="this.parentElement.style.display='none'" class="closebtn">&times; Cerrar</div><br>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.820465169299!2d-99.14424148561743!3d19.46330594474274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f91c3aec3855%3A0xd5a1941e9d445bf1!2sCalz.%20Vallejo%20733%2C%20San%20Sim%C3%B3n%20Tolnahuac%2C%20Cuauht%C3%A9moc%2C%2006920%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1595880681967!5m2!1ses-419!2smx"
             width="80%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
     <div class="containerTab" id="sucursal2" align="center">
+        <h1>Sucursal 2</h1><br>
         <div onclick="this.parentElement.style.display='none'" class="closebtn">&times; Cerrar</div><br>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.820465169299!2d-99.14424148561743!3d19.46330594474274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f91c3aec3855%3A0xd5a1941e9d445bf1!2sCalz.%20Vallejo%20733%2C%20San%20Sim%C3%B3n%20Tolnahuac%2C%20Cuauht%C3%A9moc%2C%2006920%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1595880681967!5m2!1ses-419!2smx"
             width="80%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
     <div class="containerTab" id="sucursal3" align="center">
+        <h1>Sucursal 3</h1><br>
         <div onclick="this.parentElement.style.display='none'" class="closebtn">&times; Cerrar</div><br>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.820465169299!2d-99.14424148561743!3d19.46330594474274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f91c3aec3855%3A0xd5a1941e9d445bf1!2sCalz.%20Vallejo%20733%2C%20San%20Sim%C3%B3n%20Tolnahuac%2C%20Cuauht%C3%A9moc%2C%2006920%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1595880681967!5m2!1ses-419!2smx"
             width="80%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
     <div class="containerTab" id="sucursal4" align="center">
+        <h1>Sucursal 4</h1><br>
         <div onclick="this.parentElement.style.display='none'" class="closebtn">&times; Cerrar</div><br>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.820465169299!2d-99.14424148561743!3d19.46330594474274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f91c3aec3855%3A0xd5a1941e9d445bf1!2sCalz.%20Vallejo%20733%2C%20San%20Sim%C3%B3n%20Tolnahuac%2C%20Cuauht%C3%A9moc%2C%2006920%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1595880681967!5m2!1ses-419!2smx"
             width="80%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
@@ -58,6 +62,7 @@ and open the template in the editor.
           }
           document.getElementById(tabName).style.display = "block";
         }
+        openTab('sucursal1');
     </script>
     <div class="footer">
         <iframe src="footer.html"></iframe>
