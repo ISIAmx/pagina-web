@@ -258,41 +258,42 @@ p.puertaCont {
 
 .Direcciones {
     width: 100%;
-    padding-left: 5vh;
+    text-align: center;
+    align-content: center;
+    align-items: center;
 }
 
-.Direcciones [class^=opc]{
+.Direcciones [id^=opc]{
+    width: calc(25% - 2px);
     border: 1px solid #ccc;
     display: block;
-    float:left;
+    float: left;
     transition: 0.3s;
     cursor: pointer;
     background-color: white;
     color: var(--font-color);
     padding-top: 5vh;
     padding-bottom: 5vh;
-    padding-left: 8vw;
-    padding-right: 8vw;
 }
 
-.Direcciones [class^=opc]:hover{
+.Direcciones [id^=opc]:hover{
     background-color: var(--font-color);
     color: white;
 }
 
-.Direcciones [class^=opc]:active{
+.Direcciones [id^=opc]:active{
     background-color: gray;
 }
 
 .closebtn {
     cursor: pointer;
-    text-align: right;
+    text-align: center;
     width: 80%;
 }
 
 .closebtn:hover {
-    background-color: var(--font-color);
-    color: white;
+    background-color: lightgray;
+    color: var(--font-color);
 }
 
 /* ESTILOS DEL FOOTER */
