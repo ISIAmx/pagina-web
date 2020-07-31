@@ -29,24 +29,70 @@
             <li><a href="contact.html">Contacto</a></li>
         </ul>
     </div>
-    <div id="Facebook">
-        <div class="facebook-title">
-            <h1><i class="far fa-id-card"></i> Contáctanos</h1>
-        </div>
-        <div class="fb-page-container">
-            <div class="fb-page" data-href="https://www.facebook.com/isia.automatismos" data-tabs="messages,events" data-width="500" data-height="600" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false">
-                <blockquote cite="https://www.facebook.com/isia.automatismos" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/isia.automatismos">Ingeniería y Servicios Integrales para Automatización</a></blockquote>
-            </div>
-        </div>
-        <div class="fb-post-container">
-            <!--Introducir formulario para enviar correo-->
-            <h2>Al correo</h2>
-            <h2>ventas@isia.com.mx</h2>
-            <hr/>
-        </div>
-        <div class="facebook-likes">Atención de 9:00-18:00 de Lunes a Viernes
-            <hr width="80%" align="center">Atención telefónica al número 5772 6519</div>
+    <div class="facebook-title">
+        <h1><i class="far fa-id-card"></i> Contáctanos</h1>
     </div>
+        <div class="container">
+          <form action="">
+            <div class="row">
+              <div class="col-25">
+                <label for="nombre">Nombre completo</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="nombre" name="nomre" placeholder="Nombre">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="telefono">Número telefónico</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="telefono" name="telefono" placeholder="Teléfono">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="correo">Correo</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="correo" name="correo" placeholder="Correo electrónico">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="empresa">Empresa que representa</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="empresa" name="empresa" placeholder="Empresa">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="producto">¿Qué tipo de producto o servicio está buscando?</label>
+              </div>
+              <div class="col-75">
+                <select id="producto" name="producto">
+                  <option value="equipo">Equipo</option>
+                  <option value="controles">Controles</option>
+                  <option value="instalacion">Instalación completa</option>
+                  <option value="mantenimiento">Mantenimiento</option>
+                  <option value="soporte">Soporte técnico</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="descripcion">Escriba una breve descripción de su necesidad</label>
+              </div>
+              <div class="col-75">
+                <textarea id="descripcion" name="descripcion" placeholder="..." style="height:100px"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <input type="submit" value="Enviar">
+            </div>
+          </form>
+        </div>
 
     <!-- footer -->
     <div class="footer">
