@@ -354,6 +354,7 @@ input[type=submit]:hover {
     color: var(--font-color);
     padding-top: 5vh;
     padding-bottom: 5vh;
+    margin-bottom: 6vh;
 }
 
 .Direcciones [id^=opc]:hover {
@@ -363,6 +364,13 @@ input[type=submit]:hover {
 
 .Direcciones [id^=opc]:active {
     background-color: gray;
+}
+
+.containerTab {
+    color: white;
+    background-color: var(--font-color);
+    margin-bottom: 4px;
+    margin-top: 6px;
 }
 
 .closebtn {
