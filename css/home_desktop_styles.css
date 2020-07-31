@@ -370,7 +370,7 @@ input[type=submit]:hover {
     color: white;
     background-color: var(--font-color);
     margin-bottom: 4px;
-    margin-top: 6px;
+    /*margin-top: 6px;*/
 }
 
 .closebtn {
