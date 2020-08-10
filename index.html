@@ -25,7 +25,7 @@
             <li><a href="index.html">Inicio</a></li>
             <li><a href="gallery.html">Galeria</a></li>
             <li><a href="sucursales.html">Nuestras Sucursales</a></li>
-            <li><a href="#">Productos</a></li>
+            <li><a href="productos.html">Productos</a></li>
             <li><a href="contact.html">Contacto</a></li>
         </ul>
     </div>
@@ -39,21 +39,23 @@
             <button class="banner-button" onclick="ChangeImg(1)"><i class="fas fa-chevron-right side"></i></button>
         </div>
     </section>
-
+    
+    <script src="js/cookies.js"></script>
+    
     <div class="Barra">
         <ul>
-            <li class="animCont"><a class="item" href="#contact">Batientes<p class="puertaCont"><span class="pbizq"></span><span class="pbder"></span></p></a></li>
-            <li class="animCont"><a class="item" href="#about">Corredizas<p class="puertaCont"><span class="pcorr"></span></p></a></li>
-            <li class="animCont"><a class="item" href="#news">Seccionales<p class="puertaCont"><span class="psecc"><span class="ppanel"></span><span class="ppanel"></span><span class="ppanel"></span><span class="ppanel"></span></span></p></a></li>
-            <li class="animCont"><a class="item" href="#home">Enrolables<p class="puertaCont"><span class="prmov"><span class="ppanel"></span><span class="ppanel"></span><span class="ppanel"></span><span class="ppanel"></span></span><span class="prfij"></span></p></a></li>
-            <li class="animCont"><a class="item" href="#home">Barreras<p class="puertaCont"><span class="pbhor"></span><span class="pbver"></span></p></a></li>
-            <li class="animCont"><a class="item" href="#home">Peatonales<p class="puertaCont"><span class="ppmov"></span><span class="ppfij"></span></p></a></li>
-            <li class="animCont"><a class="item" href="#home">Radio<p class="puertaCont"><span class="control"></span><span class="led"></span><span class="onda"></span></p></a></li>
-            <li class="animCont"><a class="item" href="#home">Tarjetas<p class="puertaCont"><span class="tarjeta"></span><span class="rect1"></span><span class="rect2"></span><span class="rect3"></span><span class="rect4"></span></p></a></li>
-            <li class="animCont"><a class="item" href="#home">Accesorios</a></li>
+            <li class="animCont"><a class="item" href="productos.html" onclick="setCookie('tipo','batientes');">Batientes<p class="puertaCont"><span class="pbizq"></span><span class="pbder"></span></p></a></li>
+            <li class="animCont"><a class="item" href="productos.html" onclick="setCookie('tipo','corredizas');">Corredizas<p class="puertaCont"><span class="pcorr"></span></p></a></li>
+            <li class="animCont"><a class="item" href="productos.html" onclick="setCookie('tipo','seccionales');">Seccionales<p class="puertaCont"><span class="psecc"><span class="ppanel"></span><span class="ppanel"></span><span class="ppanel"></span><span class="ppanel"></span></span></p></a></li>
+            <li class="animCont"><a class="item" href="productos.html" onclick="setCookie('tipo','enrolables');">Enrolables<p class="puertaCont"><span class="prmov"><span class="ppanel"></span><span class="ppanel"></span><span class="ppanel"></span><span class="ppanel"></span></span><span class="prfij"></span></p></a></li>
+            <li class="animCont"><a class="item" href="productos.html" onclick="setCookie('tipo','barreras');">Barreras<p class="puertaCont"><span class="pbhor"></span><span class="pbver"></span></p></a></li>
+            <li class="animCont"><a class="item" href="productos.html" onclick="setCookie('tipo','peatonales');">Peatonales<p class="puertaCont"><span class="ppmov"></span><span class="ppfij"></span></p></a></li>
+            <li class="animCont"><a class="item" href="productos.html" onclick="setCookie('tipo','radio');">Radio<p class="puertaCont"><span class="control"></span><span class="led"></span><span class="onda"></span></p></a></li>
+            <li class="animCont"><a class="item" href="productos.html" onclick="setCookie('tipo','tarjetas');">Tarjetas<p class="puertaCont"><span class="tarjeta"></span><span class="rect1"></span><span class="rect2"></span><span class="rect3"></span><span class="rect4"></span></p></a></li>
+            <li class="animCont"><a class="item" href="productos.html" onclick="setCookie('tipo','accesorios');">Accesorios</a></li>
         </ul>
     </div>
-
+    
     <!--data-href se actualiza con la URL de la publicación que se desea mostrar-->
     <div id="Facebook">
         <div class="facebook-title">
