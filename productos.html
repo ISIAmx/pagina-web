@@ -2,24 +2,56 @@
 <html>
     <head>
         <title>Productos ISIA</title>
+        <link rel="stylesheet" href="css/home_desktop_styles.css">
+        <link rel="stylesheet" href="css/home_mobile_styles.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <!--Header-->
+        <div class="header">
+            <iframe src="header.html">El navegador no soporta iframe. Intente usar otro navegador o una versión más reciente</iframe>
+        </div>
+        
         <div id="introduce">TODO write content</div>
         <script src="js/cookies.js"></script>
         <script>
             switch(getCookie('tipo')){
-                case "corredizas":
-                    document.getElementById('introduce').innerHTML = 'puerta corrediza';
-                    break;
                 case "batientes":
                     document.getElementById('introduce').innerHTML = 'puerta batiente';
                     break;
+                case "corredizas":
+                    document.getElementById('introduce').innerHTML = 'puerta corrediza';
+                    break;
+                case "seccionales":
+                    document.getElementById('introduce').innerHTML = "Puertas seccionales";
+                    break;
+                case "enrolables":
+                    document.getElementById('introduce').innerHTML = "Puertas enrolables";
+                    break;
+                case "barreras":
+                    document.getElementById('introduce').innerHTML = "Barreras";
+                    break;
+                case "peatonales":
+                    document.getElementById('introduce').innerHTML = "Puertas peatonales";
+                    break;
+                case "radio":
+                    document.getElementById('introduce').innerHTML = "radio";
+                    break;
+                case "tarjetas":
+                    document.getElementById('introduce').innerHTML = "tarjetas";
+                    break;
+                case "accesorios":
+                    document.getElementById('introduce').innerHTML = "accesorios";
                 default:
                     document.getElementById('introduce').innerHTML = 'none';
                     
             }
         </script>
+        
+        <!--footer-->
+        <div class="footer">
+            <iframe src="footer.html">El navegador no soporta iframe. Intente usar otro navegador o una versión más reciente</iframe>
+        </div>
     </body>
 </html>
