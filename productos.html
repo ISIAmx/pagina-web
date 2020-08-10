@@ -8,6 +8,18 @@
     <body>
         <div id="introduce">TODO write content</div>
         <script src="js/cookies.js"></script>
-        <script>document.getElementById('introduce').innerHTML = 'valor de cookie = ' + getCookie('tipo');</script>
+        <script>
+            switch(getCookie('tipo')){
+                case "corredizas":
+                    document.getElementById('introduce').innerHTML = 'puerta corrediza';
+                    break;
+                case "batientes":
+                    document.getElementById('introduce').innerHTML = 'puerta batiente';
+                    break;
+                default:
+                    document.getElementById('introduce').innerHTML = 'none';
+                    
+            }
+        </script>
     </body>
 </html>
