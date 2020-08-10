@@ -1,6 +1,5 @@
 function setCookie(cname, cvalue) {
   document.cookie = cname + "=" + cvalue + ";max-age=10;";
-  alert('cookie set ' + document.cookie);
 }
 
 function getCookie(cname) {
