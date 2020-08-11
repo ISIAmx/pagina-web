@@ -56,9 +56,9 @@ img {
     display: grid;
     grid-template-areas: 
         'tipoProducto tipoProducto estrella estrella estrella'
-        'filtros filtros filtros filtros filtros';
+        'filtros filtros filtros filtros filtros' ;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 30vh 30vh 1fr;
+    grid-template-rows: 30vh 30vh;
     grid-gap: 10px;
     width: calc(100% - 10px);
 }
