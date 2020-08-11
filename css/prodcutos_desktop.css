@@ -62,3 +62,19 @@ img {
     grid-gap: 10px;
     width: calc(100% - 10px);
 }
+
+@media (max-width: 800px) {
+    #prod-container {
+        grid-template-areas: 'tipoProducto' 'estrella' 'filtros';
+        grid-template-columns: 1fr;
+        grid-template-rows: 20vh 40vh auto;
+    }
+    
+    #filtros {
+        grid-template-rows: auto auto;
+    }
+    
+    #motores,#tarjetas,#accesorios {
+        grid-template-columns: 1fr;
+    }
+}
