@@ -13,7 +13,7 @@
             <iframe src="header.html">El navegador no soporta iframe. Intente usar otro navegador o una versión más reciente</iframe>
         </div>
         
-        <form>
+        <form action="">
             <select name="producto" id="producto">
                 <optgroup label="Motores">
                     <option value="Batientes">Batientes</option>
@@ -34,34 +34,34 @@
         <script>
             switch(getCookie('tipo')){
                 case "batientes":
-                    document.getElementById('introduce').innerHTML = 'puerta batiente';
+                    document.getElementById('producto').selectedIndex = 0;
                     break;
                 case "corredizas":
-                    document.getElementById('introduce').innerHTML = 'puerta corrediza';
+                    document.getElementById('producto').selectedIndex = 1;
                     break;
                 case "seccionales":
-                    document.getElementById('introduce').innerHTML = "Puertas seccionales";
+                    document.getElementById('producto').selectedIndex = 2;
                     break;
                 case "enrolables":
-                    document.getElementById('introduce').innerHTML = "Puertas enrolables";
+                    document.getElementById('producto').selectedIndex = 3;
                     break;
                 case "barreras":
-                    document.getElementById('introduce').innerHTML = "Barreras";
+                    document.getElementById('producto').selectedIndex = 4;
                     break;
                 case "peatonales":
-                    document.getElementById('introduce').innerHTML = "Puertas peatonales";
+                    document.getElementById('producto').selectedIndex = 5;
                     break;
                 case "radio":
-                    document.getElementById('introduce').innerHTML = "radio";
+                    document.getElementById('producto').selectedIndex = 6;
                     break;
                 case "tarjetas":
-                    document.getElementById('introduce').innerHTML = "tarjetas";
+                    document.getElementById('producto').selectedIndex = 7;
                     break;
                 case "accesorios":
-                    document.getElementById('introduce').innerHTML = "accesorios";
+                    document.getElementById('producto').selectedIndex = 8;
+                    break;
                 default:
-                    document.getElementById('introduce').innerHTML = 'none';
-                    
+                    document.getElementById('producto').selectedIndex = -1;
             }
         </script>
         
