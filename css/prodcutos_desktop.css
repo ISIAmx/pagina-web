@@ -1,0 +1,64 @@
+
+/* 
+    Created on : 10/08/2020, 07:29:29 PM
+    Author     : Angel Mares
+*/
+* {
+    color: var(--font-color);
+    text-align: center;
+}
+
+#tipoProducto {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-area: tipoProducto;
+    vertical-align: middle;
+}
+
+#tipoProducto > * {
+    vertical-align: middle;
+}
+
+#estrella {
+    grid-area: estrella;
+}
+
+#estrella > img {
+    max-height: 80%;
+    width: auto;
+}
+
+#filtros {
+    grid-area: filtros;
+    display: grid;
+    grid-template-rows: 40% 60%;
+}
+
+#motores,#tarjetas,#accesorios {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:10px
+}
+
+#filtros > * {
+    display:none;
+}
+
+.img {
+    text-align: justify;
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+#prod-container {
+    display: grid;
+    grid-template-areas: 
+        'tipoProducto tipoProducto estrella estrella estrella'
+        'filtros filtros filtros filtros filtros';
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 30vh 30vh 1fr;
+    grid-gap: 10px;
+    width: calc(100% - 10px);
+}
