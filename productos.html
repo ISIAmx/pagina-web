@@ -4,6 +4,7 @@
         <title>Productos ISIA</title>
         <link rel="stylesheet" href="css/home_desktop_styles.css">
         <link rel="stylesheet" href="css/home_mobile_styles.css">
+        <link rel="stylesheet" type="text/css" href="css/prodcutos_desktop.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -13,23 +14,165 @@
             <iframe src="header.html">El navegador no soporta iframe. Intente usar otro navegador o una versión más reciente</iframe>
         </div>
         
-        <form action="">
-            <select name="producto" id="producto">
-                <optgroup label="Motores">
-                    <option value="Batientes">Batientes</option>
-                    <option value="Corredizas">Corredizas</option>
-                    <option value="Seccionales">Seccionales</option>
-                    <option value="Enrolables">Enrolables</option>
-                    <option value="Barreras">Barreras</option>
-                    <option value="Peatonales">Peatonales</option>
-                </optgroup>
-                <option value="Radio">Radio</option>
-                <option value="Tarjetas">Tarjetas</option>
-                <option value="Accesorios">Accesorios</option>
-            </select>
-        </form>
+        <div id="prod-container">
+            <div id="tipoProducto">
+                <div></div>
+                <div>Seleccione el tipo de producto que desea:</div>
+                <div></div>
+                <select name="producto" id="producto" onchange="filtro()">
+                    <optgroup label="Motores">
+                        <option value="Batientes">Batientes</option>
+                        <option value="Corredizas">Corredizas</option>
+                        <option value="Seccionales">Seccionales</option>
+                        <option value="Enrolables">Enrolables</option>
+                        <option value="Barreras">Barreras</option>
+                        <option value="Peatonales">Peatonales</option>
+                    </optgroup>
+                    <optgroup label="Otros">
+                        <option value="Radio">Radio</option>
+                        <option value="Tarjetas">Tarjetas</option>
+                        <option value="Accesorios">Accesorios</option>
+                    </optgroup>
+                </select>
+                <div></div>
+            </div>
         
-        <div id="introduce">TODO write content</div>
+        <script>
+            function filtro() {
+                var seleccionado = document.getElementById('producto').selectedIndex;
+                switch(seleccionado)
+                {
+                    case 1:
+                    case 2:
+                    case 3:
+                    case 4:
+                    case 5: 
+                    case 6:
+                        var lista = document.getElementById('filtros').children;
+                        for(var i=0; i<lista.length; i++){
+                            lista[i].style.display = "grid";
+                        }
+                        document.getElementById('tarjetas').style.display = "none";
+                        document.getElementById('accesorios').style.display = "none";
+                        break;
+                    case 7:
+                        var lista = document.getElementById('filtros').children;
+                        for(var i=0; i<lista.length; i++){
+                            lista[i].style.display = "grid";
+                        }
+                        document.getElementById('motores').style.display = "none";
+                        document.getElementById('accesorios').style.display = "none";
+                        break;
+                    case 8:
+                        var lista = document.getElementById('filtros').children;
+                        for(var i=0; i<lista.length; i++){
+                            lista[i].style.display = "grid";
+                        }
+                        document.getElementById('tarjetas').style.display = "none";
+                        document.getElementById('motores').style.display = "none";
+                        break;
+                    default:
+                        var lista = document.getElementById('filtros').children;
+                        for(var i=0; i<lista.length; i++){
+                            lista[i].style.display = "none";
+                        }
+                        break;
+                }
+            }
+        </script>
+        
+            <div id="estrella"><img src="img/logoISIA.png" alt="img"><br>Descripción del producto estrella</div>
+            <div id="filtros">
+                <p id="pFiltro">Seleccione las especificaciones del elemento que busca:</p>
+                <div id="motores">
+                    <div>
+                    <label for="carga">Capacidad de carga:</label>
+                    <select name="carga" id="carga">
+                        <option>  </option>
+                        <option>Opcion 1</option>
+                        <option>Opcion 2</option>
+                        <option>Opcion 3</option>
+                    </select>
+                    </div>
+                    <div>
+                    <label for="velocidad">Velocidad:</label>
+                    <select name="velocidad" id="velocidad">
+                        <option> </option>
+                        <option>Opcion 1</option>
+                        <option>Opcion 2</option>
+                        <option>Opcion 3</option>
+                    </select>
+                    </div>
+                    <div>
+                    <label for="alimentacion">Tipo de alimentación:</label>
+                    <select name="alimentacion" id="alimentacion">
+                        <option> </option>
+                        <option>Opcion 1</option>
+                        <option>Opcion 2</option>
+                        <option>Opcion 3</option>
+                    </select>
+                    </div>
+                </div>
+                <div id="tarjetas">
+                    <div>
+                    <label for="alimentaciontar">Alimentación:</label>
+                    <select name="alimentaciontar" id="alimentaciontar">
+                        <option> </option>
+                        <option>Opcion 1</option>
+                        <option>Opcion 2</option>
+                        <option>Opcion 3</option>
+                    </select>
+                    </div>
+                    <div>
+                    <label for="salida">Salida:</label>
+                    <select name="salida" id="salida">
+                        <option> </option>
+                        <option>Opcion 1</option>
+                        <option>Opcion 2</option>
+                        <option>Opcion 3</option>
+                    </select>
+                    </div>
+                    <div>
+                    <label for="receptor">Receptor:</label>
+                    <select name="receptor" id="receptor">
+                        <option> </option>
+                        <option>Opcion 1</option>
+                        <option>Opcion 2</option>
+                        <option>Opcion 3</option>
+                    </select>
+                    </div>
+                </div>
+                <div id="accesorios">
+                    <div>
+                    <label for="alimentacionacc">Alimentación:</label>
+                    <select name="alimentacionacc" id="alimentacionacc">
+                        <option> </option>
+                        <option>Opcion 1</option>
+                        <option>Opcion 2</option>
+                        <option>Opcion 3</option>
+                    </select>
+                    </div>
+                    <div></div>
+                    <div>
+                    <label for="salidaacc">Entrada/Salida:</label>
+                    <select name="salidaacc" id="salidaacc">
+                        <option> </option>
+                        <option>Salida</option>
+                        <option>Entrada</option>
+                    </select>
+                    </div>
+                </div>
+            </div>
+            <div class="img"><img src="img/img1.jpg" alt="img"><br>Breve descripción</div>
+            <div class="img"><img src="img/img2.jpg" alt="img"><br>Breve descripción</div>
+            <div class="img"><img src="img/img3.jpg" alt="img"><br>Breve descripción</div>
+            <div class="img"><img src="img/img4.jpg" alt="img"><br>Breve descripción</div>
+            <div class="img"><img src="img/img5.jpg" alt="img"><br>Breve descripción</div>
+            <div class="img"><img src="img/logoSS.png" alt="img"><br>Breve descripción</div>
+            <div class="img"><img src="img/logoISIA.png" alt="img"><br>Breve descripción</div>
+        </div>
+        
+        
         <script src="js/cookies.js"></script>
         <script>
             switch(getCookie('tipo')){
